@@ -2,6 +2,8 @@ package com.alexramos.exercici1
 
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
@@ -23,14 +25,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val fullName: EditText = findViewById(R.id.fullName)
-        val email: EditText = findViewById(R.id.email)
-        val phoneNumber: EditText = findViewById(R.id.phoneNumber)
-        val password: EditText = findViewById(R.id.password)
         val signUpButton: Button = findViewById(R.id.signUpButton)
 
         signUpButton.setOnClickListener {
-            // Aquí puedes agregar la lógica para registrar al usuario
             Toast.makeText(this, "Cuenta creada para ${fullName.text}", Toast.LENGTH_SHORT).show()
         }
+
+
     }
 }
