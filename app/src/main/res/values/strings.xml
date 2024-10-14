@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exercici1</string>
+    <string name="your_product_name">Your product name</string>
+    <string name="_39">$39</string>
+    <string name="lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
