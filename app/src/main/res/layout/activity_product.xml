@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#E0E6ED"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:src="@drawable/dropbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#CFD8DC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="174dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/your_product_name_product"
+            android:textAlignment="center"
+            android:textColor="#4b42f5"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="79dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/__39"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_name" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_"
+            android:textAlignment="center"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_price" />
+
+        <TextView
+            android:id="@+id/product_long_description"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="@string/fusce_egetes_et_sapien_lacinia_placerat_ut_at_condimentum_est"
+            android:textAlignment="center"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_description" />
+
+        <Spinner
+            android:id="@+id/product_version"
+            android:layout_width="109dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="76dp"
+            android:entries="@array/product_versions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_long_description" />
+
+        <Button
+            android:id="@+id/add_to_cart_button"
+            android:layout_width="196dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#607D8B"
+            android:text="@string/add_to_cart_"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/product_version"
+            app:layout_constraintTop_toBottomOf="@id/product_long_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

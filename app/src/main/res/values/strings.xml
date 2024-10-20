@@ -11,4 +11,14 @@
     <string name="password">Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="plus">+</string>
+    <string name="your_product_name_product">Your product name</string>
+    <string name="__39">$39</string>
+    <string name="lorem_ipsum_dolor_sit_amet_">Lorem ipsum dolor sit amet</string>
+    <string name="fusce_egetes_et_sapien_lacinia_placerat_ut_at_condimentum_est">Fusce egetes et sapien lacinia placerat. Ut at condimentum est.</string>
+    <string name="add_to_cart_">Add to cart</string>
+    <string-array name="product_versions">
+        <item>DELUXE</item>
+        <item>STANDARD</item>
+        <item>PREMIUM</item>
+    </string-array>
 </resources>
